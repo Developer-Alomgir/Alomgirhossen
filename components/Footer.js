@@ -1,9 +1,11 @@
-export default function Footer(){ 
+import '../styles/globals.css'
+import { Analytics } from '@vercel/analytics/react'  // ✅ Vercel Analytics import
+
+export default function MyApp({ Component, pageProps }) {
   return (
-    <footer className="site-footer">
-      <div className="container">
-        <small>Development by <strong>ALOMGIR HOSSEN</strong> — <a href="https://About.me/AlomgirHossen" target="_blank" rel="noreferrer">About.me/AlomgirHossen</a></small>
-      </div>
-    </footer>
+    <>
+      <Component {...pageProps} />
+      <Analytics />   {/* ✅ Analytics setup */}
+    </>
   )
 }
