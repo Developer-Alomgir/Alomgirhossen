@@ -42,7 +42,7 @@ export default function Home() {
         <nav className="nav">
           <Link href="/">Home</Link>
           <Link href="/info">History</Link>
-          <Link href="/gallery">Expole Our Gandaria</Link>
+          <Link href="/gallery">Expole</Link>
         </nav>
       </motion.header>
 
