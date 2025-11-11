@@ -41,8 +41,8 @@ export default function Home() {
         <h1 className="title">Our <span className="accent">Gandaria</span></h1>
         <nav className="nav">
           <Link href="/">Home</Link>
-          <Link href="/info">Info</Link>
-          <Link href="/gallery">Gallery</Link>
+          <Link href="/info">History</Link>
+          <Link href="/gallery">Expole Our Gandaria</Link>
         </nav>
       </motion.header>
 
