@@ -176,7 +176,7 @@ export default function Home() {
           .skills-section {
             margin-top: 3rem;
             overflow: hidden;
-            background: #f8f8f8;
+            background: #121212;
             padding: 1.5rem 0;
           }
           .section-title {
@@ -196,9 +196,10 @@ export default function Home() {
           .skill-card {
             margin: 0 1rem;
             padding: 0.6rem 1.3rem;
-            background: #fff;
+            background: #1e1e1e;
+            color: #fff;
             border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
             flex: 0 0 auto;
           }
         `}</style>
