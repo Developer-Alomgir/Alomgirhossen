@@ -95,78 +95,77 @@ export default function Home() {
       </section>
 
       {/* ======= Skills Section ======= */}
-      <section className="skills-section">
-        <h4 className="section-title">Skills</h4>
-        <div className="skills-marquee">
-          <div className="skills-track">
-            {skills.concat(skills).map((skill, idx) => (
-              <div key={idx} className="skill-card">{skill}</div>
-            ))}
-          </div>
-        </div>
-      </section>
+<section className="skills-section">
+  <h4 className="section-title">Skills</h4>
 
-      <style jsx>{`
-        .skills-section {
-          margin-top: 3rem;
-          overflow: hidden;
-          position: relative;
-          background: #f8f8f8;
-          padding: 1rem 0;
-        }
-        .section-title {
-          text-align: center;
-          margin-bottom: 1rem;
-          font-size: 1.5rem;
-        }
-        .skills-marquee {
-          display: flex;
-          overflow: hidden;
-          width: 100%;
-        }
-        .skills-track {
-          display: flex;
-          animation: marquee 15s linear infinite;
-        }
-        .skill-card {
-          flex: 0 0 auto;
-          margin: 0 1rem;
-          padding: 0.5rem 1rem;
-          background: #fff;
-          border-radius: 8px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-          white-space: nowrap;
-          font-size: 1rem;
-          transition: transform 0.3s;
-        }
-        .skill-card:hover {
-          transform: scale(1.05);
-        }
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
+  <div 
+    className="skills-marquee"
+    onTouchStart={(e) => startDrag(e.touches[0].clientX)}
+    onTouchMove={(e) => moveDrag(e.touches[0].clientX)}
+    onTouchEnd={endDrag}
+    onMouseDown={(e) => startDrag(e.clientX)}
+    onMouseMove={(e) => isDragging && moveDrag(e.clientX)}
+    onMouseUp={endDrag}
+    onMouseLeave={endDrag}
+  >
+    <div
+      className="skills-track"
+      style={{ transform: `translateX(${offset}px)` }}
+    >
+      {skills.concat(skills).map((skill, idx) => (
+        <div key={idx} className="skill-card">{skill}</div>
+      ))}
+    </div>
+  </div>
 
-        /* ===== Responsive Styles ===== */
-        @media (max-width: 1024px) {
-          .skill-card {
-            font-size: 0.9rem;
-            padding: 0.4rem 0.8rem;
-          }
-          .skills-track {
-            animation-duration: 20s; /* slower on tablet */
-          }
-        }
-        @media (max-width: 640px) {
-          .skill-card {
-            font-size: 0.8rem;
-            padding: 0.3rem 0.6rem;
-          }
-          .skills-track {
-            animation-duration: 25s; /* slower on mobile */
-          }
-        }
-      `}</style>
-    </main>
-  )
-}
+  <style jsx>{`
+    .skills-section {
+      margin-top: 3rem;
+      overflow: hidden;
+      background: #f8f8f8;
+      padding: 1.5rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills-marquee {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      cursor: grab;
+    }
+
+    .skills-track {
+      display: flex;
+      white-space: nowrap;
+      will-change: transform;
+    }
+
+    .skill-card {
+      flex: 0 0 auto;
+      margin: 0 1rem;
+      padding: 0.6rem 1.3rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      transition: 0.2s;
+      user-select: none;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .skill-card {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.9rem;
+      }
+    }
+  `}</style>
+</section>
