@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main className="container">
       <motion.header initial={{opacity:0, y:-12}} animate={{opacity:1, y:0}} transition={{duration:0.6}} className="site-header">
-        <h1 className="title">Welcome To My<span className="accent">Dimension</span></h1>
+        <h1 className="title">Welcome To My <span className="accent">Dimension</span></h1>
         <nav className="nav">
           <Link href="/">Home</Link>
           <Link href="/info">About Me</Link>
@@ -56,8 +56,8 @@ export default function Home() {
             React.JS | Next.JS | Node.JD | JavaScript | Typescript | Github | Tailwind CSS | HTML | WebFlow.
           </motion.p>
           <motion.div className="hero-cta" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.9}}>
-            <Link href="/info"><a className="btn">Area Info</a></Link>
-            <Link href="/gallery"><a className="btn ghost">Gallery</a></Link>
+            <Link href="/info"><a className="btn">My Biography</a></Link>
+            <Link href="/gallery"><a className="btn ghost">Project Gallery</a></Link>
           </motion.div>
         </div>
         <div className="hero-bg" aria-hidden="true" />
