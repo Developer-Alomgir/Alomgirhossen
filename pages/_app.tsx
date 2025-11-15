@@ -1,11 +1,12 @@
 import '../styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
-import type { AppProps } from 'next/app'
+import Footer from '../components/Footer'
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
+      <Footer />       {/* Sticky footer */}
       <Analytics />
     </>
   )
