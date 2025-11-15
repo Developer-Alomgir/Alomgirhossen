@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 const typePhrases = [
-  'Discover Gandaria',
-  'Historic quarter of Dhaka',
-  'Aerial views & local stories'
+  'Full Stack Software Engineer',
+  'Web App Developer',
+  'Game Developer and Graphic Designer'
 ]
 
 export default function Home() {
@@ -53,7 +53,7 @@ export default function Home() {
             {display}<span className="cursor">|</span>
           </motion.h3>
           <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.6}} className="hero-lead">
-            Full Stack Software Engineer, Web App Developer, 3D Game Developer, Graphic Designer.
+            React.JS | Next.JS | Node.JD | JavaScript | Typescript | Github | Tailwind CSS | HTML | WebFlow.
           </motion.p>
           <motion.div className="hero-cta" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.9}}>
             <Link href="/info"><a className="btn">Area Info</a></Link>
