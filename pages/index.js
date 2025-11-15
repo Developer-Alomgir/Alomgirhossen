@@ -67,16 +67,16 @@ export default function Home() {
         <motion.h4 initial={{opacity:0, y:6}} animate={{opacity:1, y:0}} transition={{delay:1}}>Quick Facts & History</motion.h4>
         <motion.div className="facts-grid" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.15}}>
           <article className="fact">
-            <h5>Origin</h5>
-            <p>Gandaria (also spelled Gendaria) historically known for sugarcane cultivation; became part of Dhaka's urban expansion.</p>
+            <h5>Full Stack Software Engineer</h5>
+            <p>Experienced full stack developer specializing in modern web technologies. Expert in React, Node.js, and cloud architecture. Passionate about building scalable applications and mentoring junior developers..</p>
           </article>
           <article className="fact">
-            <h5>Landmarks</h5>
-            <p>Gandaria Railway Station, local mosques, schools and community centers — an area with deep local roots.</p>
+            <h5>Game Developer</h5>
+            <p>Developed successful video games using Unity 3D, Unreal Engine and Cocos2D.Designed game features, levels, characters and optimized performance</p>
           </article>
           <article className="fact">
-            <h5>Population</h5>
-            <p>Part of Dhaka city — dense residential neighbourhoods with lively street life and markets.</p>
+            <h5>Web App Developer</h5>
+            <p>Build Dynamic Interactive Web App With React And Next Framework.</p>
           </article>
         </motion.div>
         <motion.p className="source-note" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.4}}>
