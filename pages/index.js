@@ -94,7 +94,7 @@ export default function Home() {
         </motion.p>
       </section>
 
-{/* ======= Skills Section (FULL FIXED VERSION) ======= */}
+{/* ======= Skills Section (FINAL ERROR-FREE VERSION) ======= */}
 <section className="skills-section">
   <h4 className="section-title">Skills</h4>
 
