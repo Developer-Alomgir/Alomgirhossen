@@ -1,14 +1,15 @@
 import '../styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import Footer from '../components/Footer'
-import type { AppProps } from 'next/app'   // ✅ Import AppProps
+import type { AppProps } from 'next/app'  // ✅ Import AppProps
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div style={{ minHeight: '100vh', paddingBottom: '50px' }}>
+      {/* minHeight ensures content area is above sticky footer */}
       <Component {...pageProps} />
       <Footer />       {/* Sticky footer */}
       <Analytics />
-    </>
+    </div>
   )
 }
