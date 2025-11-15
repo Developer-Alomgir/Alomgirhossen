@@ -48,7 +48,7 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-inner">
-          <motion.h2 initial={{opacity:0, y:8}} animate={{opacity:1, y:0}} transition={{delay:0.2}}>Welcome to</motion.h2>
+          <motion.h2 initial={{opacity:0, y:8}} animate={{opacity:1, y:0}} transition={{delay:0.2}}>I am ALOMGIR HOSSEN</motion.h2>
           <motion.h3 initial={{opacity:0, y:8}} animate={{opacity:1, y:0}} transition={{delay:0.35}} className="hero-type">
             {display}<span className="cursor">|</span>
           </motion.h3>
