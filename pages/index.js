@@ -38,11 +38,11 @@ export default function Home() {
   return (
     <main className="container">
       <motion.header initial={{opacity:0, y:-12}} animate={{opacity:1, y:0}} transition={{duration:0.6}} className="site-header">
-        <h1 className="title">AlomgiR <span className="accent">Hossen</span></h1>
+        <h1 className="title">AlomgiR <span className="accent">HosseN</span></h1>
         <nav className="nav">
           <Link href="/">Home</Link>
-          <Link href="/info">History</Link>
-          <Link href="/gallery">Expole</Link>
+          <Link href="/info">About Me</Link>
+          <Link href="/gallery">Projects</Link>
         </nav>
       </motion.header>
 
