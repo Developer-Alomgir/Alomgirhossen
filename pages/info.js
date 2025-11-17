@@ -25,9 +25,9 @@ export default function Info() {
         </motion.section>
 
         <motion.section className="map-section" initial={{opacity:0, y:6}} animate={{opacity:1}} transition={{delay:0.4}}>
-          <h3>Location</h3>
-          <div className="map-wrap">
-            <iframe title="Gandaria Location" src="https://www.google.com/maps?q=Gandaria,+Dhaka&output=embed" loading="lazy"/>
+          <h3>My Git Repository</h3>
+          <div className="titel">
+            <iframe title="Git Repository" src="https://github.com/Developer-Alomgir"/>
           </div>
         </motion.section>
       </main>
