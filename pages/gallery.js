@@ -4,7 +4,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const IMAGES = [
   { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
-  { src: 'https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1400&q=80', alt: 'Aerial view' },
+  { src: 'https://cdnb.artstation.com/p/assets/images/images/070/765/501/large/alomgirs-art-dimension-412097291-2301895530021277-6381011595412999417-n.jpg?1703431258', alt: 'Aerial view' },
+  { src: 'https://www.artstation.com/artwork/ZaYrAN', alt: 'Train Station' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
   { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
   { src: 'https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400', alt: 'River view' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/3/31/Dhaka_15th_Dec_%2830831791754%29.jpg', alt: 'Dhaka skyline' }
