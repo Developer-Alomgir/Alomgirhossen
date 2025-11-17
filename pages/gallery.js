@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1400&q=80', alt: 'City landscape' },
+  { src: 'https://cdna.artstation.com/p/assets/images/images/070/000/174/large/alomgir-train.jpg?1701506323', alt: 'Train Station' },
   { src: 'https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1400&q=80', alt: 'Aerial view' },
   { src: 'https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400', alt: 'River view' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/3/31/Dhaka_15th_Dec_%2830831791754%29.jpg', alt: 'Dhaka skyline' }
